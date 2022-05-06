@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a76afb4366.js" crossorigin="anonymous"></script>
+    <style>
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .hero {
+            transform: translateY(-30px);
+            width: 100%;
+            height: 95%;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 20s ease infinite;
+            display: grid;
+            place-items: center;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white
+        }
+        .hero-content img {
+            width: 100px;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        a {
+            color: rgb(64, 101, 251);
+        }
+        .btn {
+            color: white;
+            background-color: rgba(49, 249, 182, 0.931);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        i {
+            font-size: 1.1rem;
+        }
+        i.scroll {
+            animation: scroll 1s ease infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateY(0px);
+            }
+            5% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(8px);
+            }
+            52% {
+                transform: translateY(10px);
+            }
+            55% {
+                transform: translateY(10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        .mac {
+            background-color: black;
+        }
+        .win {
+            background-color: #00a2ed;
+            border: .5px solid white;
+        }
+        .showcase {
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            overflow-x: hidden;
+        }
+        .showcase img {
+            width: 1000px;
+            border-radius: 10px;
+            margin-bottom: -100px;
+            max-width: 120%;
+        }
+    </style>
+    <title>ScreenPin</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <img src="/screenpin/assets/logo.png" alt="" srcset="">
+            <h1>ScreenPin</h1>
+            <h3>Always there.</h3>
+            <a href="#" class="btn mac" id="mac-btn"><i class="fa-brands fa-apple"></i> Download for macOS</a>
+            <a href="#" class="btn win" id="win-btn"><i class="fa-brands fa-windows"></i> Download for Windows (Join Waitlist)</a><br><br>
+            <a href="/">Other Platforms</a>
+        </div>
+        <script>
+            if(navigator.platform.indexOf('Windows') > -1) {
+                document.getElementById("mac-btn").style.display = "none"
+            }
+            else {
+                document.getElementById("win-btn").style.display = "none"
+            }
+        </script>
+    </div>
+    <div class="main">
+        <div style="text-align: center; width: 100%; margin-top: -10px;">
+            Scroll for more<br>
+            <i class="fa-solid fa-angle-down scroll"></i>
+        </div>
+        <div class="showcase">
+            <img src="/screenpin/assets/supersimple.png" alt="" srcset="">
+            <img src="/screenpin/assets/alwaysthere.png" alt="" srcset="">
+            <img src="/screenpin/assets/website.png" alt="" srcset="">
+            <img src="/screenpin/assets/pdf.png" alt="" srcset="">
+        </div>
+    </div>
+</body>
+
+</html>
