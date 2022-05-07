@@ -16,4 +16,4 @@ Please choose the platform which you would like a binary for.
                 </a>
             </div>
 
-<a href="javascript:alert('Windows Build Coming Soon')" class="btn win" id="mac-btn"><i class="fa-brands fa-windows"></i> Download for Windows</a>
+<a href="https://github.com/isaacdoescodes/screenpin/releases/download/alpha/ScreenPin-0.2.0-Windows-Setup.exe" class="btn win" id="mac-btn"><i class="fa-brands fa-windows"></i> Download for Windows</a>
