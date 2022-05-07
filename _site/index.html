@@ -37,6 +37,7 @@
             text-align: center;
             color: white
         }
+
         .hero-content img {
             width: 100px;
         }
@@ -58,6 +59,7 @@
         a {
             color: rgb(64, 101, 251);
         }
+
         .btn {
             color: rgb(0, 0, 0);
             background-color: rgba(49, 249, 182, 0.931);
@@ -69,6 +71,7 @@
         i {
             font-size: 1.1rem;
         }
+
         i.scroll {
             animation: scroll 1s ease infinite;
         }
@@ -77,6 +80,7 @@
             0% {
                 transform: translateY(0px);
             }
+
             5% {
                 transform: translateY(0px);
             }
@@ -84,25 +88,39 @@
             50% {
                 transform: translateY(8px);
             }
+
             52% {
                 transform: translateY(10px);
             }
+
             55% {
                 transform: translateY(10px);
             }
+
             100% {
                 transform: translateY(0px);
             }
         }
+
         .mac {
             background-color: black;
             color: white;
+            font-size: 15px;
         }
+
+        .mac a {
+            color: currentColor;
+            text-decoration: none;
+            margin: 0px;
+            font-size: 18px;
+        }
+
         .win {
             background-color: #00a2ed;
             border: .5px solid white;
             color: white;
         }
+
         .showcase {
             width: 100%;
             overflow-y: hidden;
@@ -110,12 +128,14 @@
             justify-items: center;
             overflow-x: hidden;
         }
+
         .showcase img {
             width: 1000px;
             border-radius: 10px;
             margin-bottom: -100px;
             max-width: 120%;
         }
+
         p {
             width: 55ch;
         }
@@ -129,12 +149,23 @@
             <img src="/assets/logo.png" alt="" srcset="">
             <h1>ScreenPin</h1>
             <h3>Always there.</h3>
-            <a href="https://github.com/isaacdoescodes/screenpin/releases/download/beta/ScreenPin-0.0.1-arm64.dmg" class="btn mac" id="mac-btn"><i class="fa-brands fa-apple"></i> Download for macOS</a>
-            <a href="#" class="btn win" id="win-btn"><i class="fa-brands fa-windows"></i> Windows Build Coming Soon</a><br><br>
-            <a href="/">Other Platforms</a>
+            <div class="btn mac" id="mac-btn"><i class="fa-brands fa-apple"></i> Download for macOS<br>
+                <hr />
+                <a style="margin-right: 20px;"
+                href="https://github.com/isaacdoescodes/screenpin/releases/download/alpha/ScreenPin-0.2.0-arm64.dmg">
+                    Apple M1
+                </a>
+                <a style="margin-left: 20px;"
+                href="https://github.com/isaacdoescodes/screenpin/releases/download/alpha/ScreenPin-0.2.0-x64.dmg">
+                    Intel
+                </a>
+            </div>
+            <a href="#" class="btn win" id="win-btn"><i class="fa-brands fa-windows"></i> Windows Build Coming
+                Soon</a><br><br>
+            <a href="/downloads">Other Platforms</a>
         </div>
         <script>
-            if(navigator.platform.indexOf('Mac') > -1) {
+            if (navigator.platform.indexOf('Mac') > -1) {
                 document.getElementById("win-btn").style.display = "none"
             }
             else {
@@ -151,11 +182,12 @@
             <br><br><br><br><br>
             <h2>About ScreenPin</h2>
             <p>
-                ScreenPin allows you to create ScreenPins which will not leave your screen until you close or minimize them.
+                ScreenPin allows you to create ScreenPins which will not leave your screen until you close or minimize
+                them.
                 You can add text notes, a website view, a pdf or an image.
             </p>
             <p>
-                ScreenPin lets you refer to a note, site or file whilst never needing to resize your main window. 
+                ScreenPin lets you refer to a note, site or file whilst never needing to resize your main window.
             </p>
             <p>
                 ScreenPin is a actively maintained open-source project so expect new features often.
