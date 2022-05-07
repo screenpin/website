@@ -7,11 +7,11 @@ Please choose the platform which you would like a binary for.
 <div class="btn mac" id="mac-btn"><i class="fa-brands fa-apple"></i> Download for macOS<br>
                 <hr />
                 <a style="margin-right: 20px;"
-                href="https://github.com/isaacdoescodes/screenpin/releases/download/alpha/ScreenPin-0.2.0-arm64.dmg">
+                href="https://github.com/isaacdoescodes/screenpin/releases/download/alpha/ScreenPin-0.2.0-macOS-arm64.dmg">
                     Apple M1
                 </a>
                 <a style="margin-left: 20px;"
-                href="https://github.com/isaacdoescodes/screenpin/releases/download/alpha/ScreenPin-0.2.0-x64.dmg">
+                href="https://github.com/isaacdoescodes/screenpin/releases/download/alpha/ScreenPin-0.2.0-macOS-x64.dmg">
                     Intel
                 </a>
             </div>
